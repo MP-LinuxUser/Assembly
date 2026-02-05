@@ -4,7 +4,7 @@ global main
 main:
     GET_DEC 4, ebx
     mov eax, ebx
-    cdq
+    cdq; [edx:eax]
     xor eax, edx
     sub eax, edx
     PRINT_DEC 4, eax
